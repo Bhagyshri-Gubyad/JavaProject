@@ -9,8 +9,7 @@ services:
       - mysql-data:/var/lib/mysql
     ports:
       - "3306:3306"
-    networks:
-      - pb-network
+    
   
   tomcat:
     build: .
@@ -24,11 +23,7 @@ services:
       - DATABASE_PASSWORD=root5412@B
     ports:
       - "8080:8080"
-    networks:
-      - pb-network
-networks:
-  pb-network:
-    driver: bridge
+   
 volumes:
   mysql-data:
     driver: local
