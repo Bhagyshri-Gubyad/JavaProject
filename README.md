@@ -6,3 +6,7 @@ Now in powershell cd tomcat bin path, here run .\startup.bat command, which will
 
 IN mysql workbench , exported databse in . sql file from server tab.
 
+creted dockerfile for build  by maven & deploy war in webappp dir of tomcat,
+created dockercompose file for connection between java & mysql, in src-code of java , replaced localhost url with 
+docker compose mysql service name, 
+automatically mysql service will resolve ip addr of mysql container.
